@@ -1,6 +1,6 @@
 [package]
 name = "mmap"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Rick Branson <rick@diodeware.com>", "The Rust Project Developers"]
 license = "MIT"
 readme = "README.md"
