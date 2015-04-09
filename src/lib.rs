@@ -413,9 +413,13 @@ impl Drop for MemoryMap {
 
 impl MemoryMap {
     /// Returns the pointer to the memory created or modified by this map.
+    #[inline(always)]
     pub fn data(&self) -> *mut u8 { self.data }
+
     /// Returns the number of bytes this map applies to.
+    #[inline(always)]
     pub fn len(&self) -> usize { self.len }
+
     /// Returns the type of mapping this represents.
     pub fn kind(&self) -> MemoryMapKind { self.kind }
 }
